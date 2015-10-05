@@ -10,11 +10,15 @@ using System.Windows.Forms;
 
 namespace xcicman_zadanie1_PSIP
 {
-    public partial class Info_Form : Form
+    public partial class Help_Form : Form
     {
-        public Info_Form()
+        public Help_Form()
         {
             InitializeComponent();
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

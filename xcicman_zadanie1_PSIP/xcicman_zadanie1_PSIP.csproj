@@ -79,11 +79,11 @@
     <Compile Include="Exit_Form.Designer.cs">
       <DependentUpon>Exit_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Info_Form.cs">
+    <Compile Include="Help_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Info_Form.Designer.cs">
-      <DependentUpon>Info_Form.cs</DependentUpon>
+    <Compile Include="Help_Form.Designer.cs">
+      <DependentUpon>Help_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -93,6 +93,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help_Form.resx">
+      <DependentUpon>Help_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

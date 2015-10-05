@@ -14,7 +14,7 @@ namespace xcicman_zadanie1_PSIP
         {
             IList<LivePacketDevice> allDevices = LivePacketDevice.AllLocalMachine;
             Dictionary<string, LivePacketDevice> adapters = new Dictionary<string, LivePacketDevice>();
-            adapters.Add("Chose adapter for port 1.", null);
+            adapters.Add("Chose adapter for port.", null);
             for (int i = 0; i != allDevices.Count; ++i)
             {
                 LivePacketDevice device = allDevices[i];

@@ -17,6 +17,7 @@ namespace xcicman_zadanie1_PSIP
     public partial class Form1 : Form
     {
         private Receive r = null;
+        Help_Form help;
         public Form1()
         {
             InitializeComponent();
@@ -57,6 +58,32 @@ namespace xcicman_zadanie1_PSIP
             {
                 Close();
             }
+        }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (help == null)
+            {
+                help = new Help_Form();
+                help.Disposed += new EventHandler(help_set_null);
+                help.Show();
+                help.MaximizeBox = false;
+                help.MinimizeBox = false;
+
+            }
+            else
+            {
+                help.Activate();
+            }
+        }
+        private void help_set_null(object sender, EventArgs e)
+        {
+            help = null;
+        }
+
+        private void infoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Autor: Tomas Cicman" + Environment.NewLine + "AIS cislo: 60327" + Environment.NewLine + "Odbor: PKSS 4" + Environment.NewLine + "Rocnik: 2015/2014" + Environment.NewLine + "Predmet: PSIP");
         }
     }
 }
